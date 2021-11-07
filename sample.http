@@ -1,0 +1,29 @@
+### delete
+DELETE localhost:8080/api/delete
+Content-Type: application/json
+
+
+### post
+POST localhost:8080/api/post
+Content-Type: application/json
+
+{
+  "id": 2,
+  "pwd": "sasfd",
+  "email": "test@test.com"
+}
+
+### put
+PUT localhost:8080/api/put
+Content-Type: application/json
+
+{
+  "id": 2,
+  "pwd": "sasfd",
+  "email": "dGVzdEB0ZXN0LmNvbQ=="
+}
+
+### get
+GET localhost:8080/api/get/1?name=test
+Accept: application/json
+
