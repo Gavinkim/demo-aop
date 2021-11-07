@@ -1,4 +1,4 @@
-package com.wooriworld.chaboo;
+package com.wooriworld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

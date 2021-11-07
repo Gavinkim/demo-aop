@@ -1,19 +1,15 @@
-package com.wooriworld.chaboo.aop;
+package com.wooriworld.aop;
 
-import com.wooriworld.chaboo.dto.UserDto;
+import com.wooriworld.dto.UserDto;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StopWatch;
 
 @Slf4j
 @Aspect
@@ -21,12 +17,12 @@ import org.springframework.util.StopWatch;
 public class DecodeAop {
 
   //controller 하위 모든 것
-  @Pointcut("execution(* com.wooriworld.chaboo.controller..*.*(..))")
+  @Pointcut("execution(* com.wooriworld.controller..*.*(..))")
   private void myPointCut() {
 
   }
 
-  @Pointcut("@annotation(com.wooriworld.chaboo.annotation.Decode)")
+  @Pointcut("@annotation(com.wooriworld.annotation.Decode)")
   private void enableDecode(){
 
   }

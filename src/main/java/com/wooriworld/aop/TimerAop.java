@@ -1,4 +1,4 @@
-package com.wooriworld.chaboo.aop;
+package com.wooriworld.aop;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -14,12 +14,12 @@ import org.springframework.util.StopWatch;
 public class TimerAop {
 
   //controller 하위 모든 것
-  @Pointcut("execution(* com.wooriworld.chaboo.controller..*.*(..))")
+  @Pointcut("execution(* com.wooriworld.controller..*.*(..))")
   private void myPointCut() {
 
   }
 
-  @Pointcut("@annotation(com.wooriworld.chaboo.annotation.Timer)")
+  @Pointcut("@annotation(com.wooriworld.annotation.Timer)")
   private void enableTimer(){
 
   }

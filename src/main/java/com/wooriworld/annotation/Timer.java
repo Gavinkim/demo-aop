@@ -1,4 +1,4 @@
-package com.wooriworld.chaboo.annotation;
+package com.wooriworld.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

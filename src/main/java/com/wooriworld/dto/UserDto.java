@@ -1,4 +1,4 @@
-package com.wooriworld.chaboo.dto;
+package com.wooriworld.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AccessLevel;

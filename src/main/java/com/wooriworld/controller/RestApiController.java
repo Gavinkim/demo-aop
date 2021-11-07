@@ -1,8 +1,8 @@
-package com.wooriworld.chaboo.controller;
+package com.wooriworld.controller;
 
-import com.wooriworld.chaboo.annotation.Decode;
-import com.wooriworld.chaboo.annotation.Timer;
-import com.wooriworld.chaboo.dto.UserDto;
+import com.wooriworld.annotation.Decode;
+import com.wooriworld.annotation.Timer;
+import com.wooriworld.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

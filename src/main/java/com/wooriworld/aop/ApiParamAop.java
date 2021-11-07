@@ -1,4 +1,4 @@
-package com.wooriworld.chaboo.aop;
+package com.wooriworld.aop;
 
 import java.lang.reflect.Method;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class ApiParamAop {
 
   //controller 하위 모든 것
-  @Pointcut("execution(* com.wooriworld.chaboo.controller..*.*(..))")
+  @Pointcut("execution(* com.wooriworld.controller..*.*(..))")
   private void myPointCut() {
 
   }
